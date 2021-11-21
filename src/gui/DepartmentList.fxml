@@ -19,12 +19,18 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Label>
-      <ToolBar orientation="VERTICAL" prefHeight="40.0" prefWidth="426.0">
+      <ToolBar orientation="VERTICAL" prefHeight="36.0" prefWidth="422.0" VBox.vgrow="NEVER">
         <items>
-          <Button fx:id="Btnew" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onBtNewAction" text="New" />
+          <Button fx:id="Btnew" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onBtNewAction" text="New" />
         </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" top="5.0" />
+         </padding>
       </ToolBar>
-      <TableView fx:id="tableViewDepartment" prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tableViewDepartment" prefHeight="335.0" prefWidth="422.0">
         <columns>
           <TableColumn fx:id="tableColumnId" prefWidth="75.0" text="id" />
           <TableColumn fx:id="tableColumnName" prefWidth="75.0" text="name" />
